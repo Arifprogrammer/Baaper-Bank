@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baaper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h2 class="text-5xl text-center mt-40 mb-14">Let's get some <span class="font-semibold text-lime-500">Moooooooney!!!!!</span></h2>
+    <!-- ---deposit---widthraw---balance -->
+    <section class="mb-14">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+            <div class="deposite p-12 bg-teal-600 rounded-lg text-white">
+                <h1 class="font-semibold text-2xl mb-4">Deposite</h1>
+                <h1 class="font-semibold text-5xl">$<span id="deposite-total">00</span></h1>
+            </div>
+            <div class="widthraw p-12 bg-red-400 rounded-lg text-white">
+                <h1 class="font-semibold text-2xl mb-4">withdraw</h1>
+                <h1 class="font-semibold text-5xl">$<span id="widthraw-total">00</span></h1>
+            </div>
+            <div class="balance p-12 bg-lime-500 rounded-lg text-white">
+                <h1 class="font-semibold text-2xl mb-4">Balance</h1>
+                <h1 class="font-semibold text-5xl">$<span id="balance-total">1024</span></h1>
+            </div>
+        </div>
+    </section>
+    <!-- ------deposite & withdraw field------- -->
+    <section>
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+            <div class="deposite-filed bg-violet-400	rounded-lg py-12 px-6">
+                <h1 class="mb-6 font-semibold text-3xl text-white">Please Deposite</h1>
+                <input type="text" name="" id="deposite-field" class="w-1/2 rounded-md px-4 py-2 mb-6 block" placeholder="$ Amount you want to deposite">
+                <button class="px-7 py-3 rounded-xl font-medium bg-lime-500 hover:bg-lime-600 hover:text-white text-white" id="depositebtn">Deposite</button>
+            </div>
+            <div class="deposite-filed bg-pink-700	rounded-lg py-12 px-6">
+                <h1 class="mb-6 font-semibold text-3xl text-white">Please Withdraw</h1>
+                <input type="text" name="" id="widthraw-field" class="w-1/2 rounded-md px-4 py-2 mb-6 block" placeholder="$ Amount you want to widthraw">
+                <button class="px-7 py-3 rounded-xl font-medium bg-lime-500 hover:bg-lime-600 hover:text-white text-white" id="widthrawbtn">Widthraw</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------js-------------- -->
+    <script src="utilities.js"></script>
+    <script src="deposite2.js"></script>
+    <script src="widthraw2.js"></script>
+</body>
+</html>
